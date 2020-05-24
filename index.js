@@ -5,7 +5,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 })
 
-client.login('NzE0MDA1NDAwNTc5NjA0NTUw.Xsof-g.hdfqe9sS2U_5_j40WqsLcNuOCfM');
+client.login('--your token here--');
 
 client.on('message', message => {
 	const commandRegex = /\-\-cump\s(\w+)/;
