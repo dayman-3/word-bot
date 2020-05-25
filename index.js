@@ -5,7 +5,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 })
 
-client.login('--your token here--');
+client.login('--your token here--')
 	.catch(console.error);
 
 client.on('message', message => {

@@ -4,4 +4,4 @@ A discord bot that can convert a short word or sentence into a chain of animated
 
 ## Built With
 
-* [discord.js](https://discord.js.org/#/) - The web framework used
+* [discord.js](https://discord.js.org/#/) - Discord API
