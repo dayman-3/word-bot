@@ -5,15 +5,20 @@ client.once('ready', () => {
 	console.log('Ready!');
 })
 
-client.login('--your token here--');
+// client.login('--your token here--');
+client.login('NzE0MDA1NDAwNTc5NjA0NTUw.XstRMg.M4J3oc7qVHMkTUax1laflon3ElE')
+	.catch(console.error);
 
 client.on('message', message => {
-	const commandRegex = /\-\-cump\s([\w\s]+)/;
+	const commandRegex = /\-\-wordbot\s([\w\s]+)/;
 	const gifPrefex = "https://tenor.com/view/letter-gif-90637";
 	const gifL = "https://tenor.com/view/red-alphabet-letter-dancing-letter-l-cartoons-gif-12084376";
 	if (commandRegex.test(message.content)) {
 		let flag = message.content.match(commandRegex)[1].toLowerCase();
-		if (flag.length > 10) return;
+		if (flag.length > 10) {
+			console.log(`User ${message.author.username} submitted a message over 10 characters`);
+			return;
+		}
 		for (let i = 0; i < flag.length; i++) {
 			switch (flag.charAt(i)) {
 				case ' ':
